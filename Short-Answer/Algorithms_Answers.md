@@ -11,7 +11,7 @@ b)
 first we have a for loop the length of n (O(n). for each position of the loop we have a while loop that will continue
 as long as j is less than n (O(n)). inside the inner while loop j gets doubled or j = j^2. this changes the while 
 runtime to O(log_n). we then times each position of the outer for loop with the inner while loop runtime making the
-total runtime O(n^log_n).
+total runtime O(n*log_n).
 
 c)
 first we have a function that looks at bunnies and determines if bunnies equals 0. if does we stop. if it doesn't
@@ -38,7 +38,7 @@ while f not found:
         go to middle and do it again
     if drop and egg doesn't break:
         middle = floors from current to top divided by half
-        got to middle and do it again
+        go to middle and do it again
     if egg doesn't break and there is no floor above it that wouldn't break it:
         we found f!
         stop the while loop
